@@ -61,37 +61,7 @@ router.get("/",verifyTokenAndAuthorization,async(req,res)=>{
 
 })
 
-// //Get all
-// router.get("/",verifyTokenAndAdmin,async(req,res)=>{
-//   try{
-//     const movies = await Movie.find()
-//     res.status(200).json(movies)
-//   }catch(err){
-//     res.status(500).json(err)
-//   }
-// })
 
-// //Get Random
-// router.get("/random",verifyTokenAndAuthorization,async(req,res)=>{
-//     const type = req.query.type
-//     let movie
-//     try{
-//         if(type==="series"){
-//             movie = await Movie.aggregate([
-//                 {$match:{isSeries:true}},
-//                 {$sample:{size:1}}
-//             ])
-//         } else{
-//             movie = await Movie.aggregate([
-//                 {$match:{isSeries:false}},
-//                 {$sample:{size:1}}
-//             ])
-//         }
-//         res.status(200).json(movie)
-//     }catch(err){
-//         res.status(500).json(err)
-//     }
-// })
 
 
 module.exports = router;
