@@ -13,6 +13,7 @@
 * /api/user/:id to update or delete a existing user
 * /api/user/find/:id to find a existing user
 * /api/user/ to view all existing users 
+* /api/user/stats to get user stats
 
 
 ## Available Routes for Authentication
@@ -21,29 +22,18 @@
 * /api/auth/login to to login
 
 
-## Available Routes for Products
-* /api/product/ to create a product
-* /api/product/:id to update or delete a exsting product
-* /api/product/find/:id to find a existing product
-* /api/product/ to get all existing products
+## Available Routes for Movies
+* /api/movies/ to create a movie or series
+* /api/movies/:id to update or delete a exsting movie or series
+* /api/movies/:id to find a existing movie or series
+* /api/movies/ to get all existing movies or series
+* /api/movies/random to get a random movie or series
 
 
-## Available Routes for Orders
-* /api/order/ to create a order
-* /api/order/:id to update or delete a exsting order
-* /api/order/find/:id to find a existing order
-* /api/order/ to get all existing orders
-
-
-## Available Routes for cart
-* /api/cart/ to create a cart
-* /api/cart/:id to update or delete a exsting user cart
-* /api/cart/find/:id to find a existing user cart
-* /api/cart/ to get all existing user carts
-
-
-## Available routes for Stripe
-* /api/payment to get payment info
+## Available Routes for lists
+* /api/lists/ to create a list
+* /api/lists/:id to delete a exsting list
+* /api/lists/:id to find a existing list
 
 
 ## Install
